@@ -12,7 +12,7 @@ import image11 from './item/WhatsApp Image 2024-07-07 at 7.06.45 PM (1).jpeg'
 import image13 from './item/WhatsApp Image 2024-07-07 at 7.06.46 PM (1).jpeg'
 import image14 from './item/WhatsApp Image 2024-07-07 at 7.06.46 PM.jpeg'
 import image15 from './item/WhatsApp Image 2024-07-07 at 7.06.47 PM (1).jpeg'
-//import image16 from './item/WhatsApp Image 2024-07-07 at 7.06.47 PM.jpeg'
+import image16 from './item/WhatsApp Image 2024-07-07 at 7.06.47 PM.jpeg'
 import image17 from './item/WhatsApp Image 2024-07-07 at 7.06.48 PM (1).jpeg'
 import image18 from './item/WhatsApp Image 2024-07-07 at 7.06.48 PM.jpeg'
 import image19 from './item/0c2d4d1f-56b1-46b0-98bf-3c2a1fd05439.jpg'
@@ -155,7 +155,7 @@ export const ItemList:ItemListInterface[] = [
 
     {
         imgpng: imagepng11 as string,
-        img: image1 as string,
+        img: image16 as string,
         details: '  ווסט כרמל איכותי מאוד מגיע עם אפשרות ניתוק מהיר הווסט מודולרי , מגיע ערום , של חברת Armoury tech ',
         name: 'ווסט כרמל איכותי מאוד',
         price: '₪399'

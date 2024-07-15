@@ -96,8 +96,8 @@ export const ImgResponsive = styled('img')(({ theme }) => ({
 
 
     [theme.breakpoints.down('sm')]: {
-        width: '20%',
-        height: '20%',
+        width: '30%',
+        height: '30%',
     },
 })) 
 export const LogoImg = styled('img')(({ theme }) => ({
