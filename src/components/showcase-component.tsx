@@ -90,7 +90,7 @@ export const ShowCase: React.FunctionComponent = () => {
             <Typography sx={{
               color: "white",
               fontFamily: "hebrewFont",
-              fontSize: { xs: "20px", sm: "50px" },
+              fontSize: { xs: "10px", sm: "50px" },
               ml: 5,
               mr: 5,
               
@@ -111,6 +111,7 @@ export const ShowCase: React.FunctionComponent = () => {
               fontSize: { xs: "15px", sm: "30px" },
               ml: 5,
               mr: 5,
+              direction: 'rtl'
             }}
             >
               {ItemList[currentIndex].details}

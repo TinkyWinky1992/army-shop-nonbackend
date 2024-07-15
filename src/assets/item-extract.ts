@@ -56,7 +56,7 @@ export const ItemList:ItemListInterface[] = [
     {
       imgpng: imagepng10 as string,
       img: image1 as string,
-      details: 'רצועה לנשק מרופדת איכותית מאוד עם אפשרות הקטנה והגדלה בקלות',
+      details: 'רצועה לנשק של מרעון דולפין ops צרה',
 
       name: 'רצועה לנשק',
       price: '₪79'
@@ -106,7 +106,7 @@ export const ItemList:ItemListInterface[] = [
     {
       imgpng: imagepng9 as string,
       img: image8 as string,
-      details: '.פנס לקדסה, מגיע עם 3 מצבי תאורה: אדום, ירוק ולבן. מתחבר למסילות של הקסדה'  ,
+      details: ' פנס לקסדה , מגיע עם 3 מצבי תאורה אדום ירוק ולבן  מתחבר למסילות של הקסדה'  ,
       name: 'פנס לקסדה',
       price: '₪99'
     },
@@ -134,14 +134,14 @@ export const ItemList:ItemListInterface[] = [
     {
       imgpng: imagepng3 as string,
       img: image13 as string,
-      details: ' .איכותי מאוד , מתחבר באמצעות רצועות מולי ',
+      details: ' איכותי מאוד , מתחבר באמצעות רצועות מולי ',
       name: ' מחסניות צבע ירוק פונדה לשלושה',
       price: '₪79'
     },
     {
       imgpng: imagepng4 as string,
       img: image14 as string,
-      details: 'איכותית מאוד וחזקה kiro ידית אחיזה של חברת',
+      details:'  ידית אחיזה איכותית וחזקה מאוד של חברת kiro',
       name: 'ידית אחיזה',
       price: '₪109'
     },
@@ -156,7 +156,7 @@ export const ItemList:ItemListInterface[] = [
     {
         imgpng: imagepng11 as string,
         img: image1 as string,
-        details: '  Armoury tech מגיע עם אפשרות ניתוק מהיר . הווסט מודולרי , מגיע ערום , של חברת  ',
+        details: '  ווסט כרמל איכותי מאוד מגיע עם אפשרות ניתוק מהיר הווסט מודולרי , מגיע ערום , של חברת Armoury tech ',
         name: 'ווסט כרמל איכותי מאוד',
         price: '₪399'
     },
@@ -164,7 +164,7 @@ export const ItemList:ItemListInterface[] = [
     {  
         imgpng: imagepng15 as string, 
         img: image17 as string,
-        details: '.כיסוי קסדה עם פודה איכותי מתאים לשלל קסדות מתחבר בקלות',
+        details: 'כיסוי קסדה עם פודה איכותי מתאים לשלל קסדות מתחבר בקלות. ',
         name: 'כיסוי קסדה עם פונדה',
         price: '₪79'
     },
@@ -172,7 +172,7 @@ export const ItemList:ItemListInterface[] = [
     {
       imgpng: imagepng17 as string,
       img: image18 as string,
-      details: '.פקל ירך לאקדח ,מתאים לשלל אקדחים נוח על הרגל',
+      details: 'פקל ירך לאקדח ,מתאים לשלל אקדחים נוח על הרגל.',
       name: 'פקל ירך לאקדח',
       price: '₪59'
     },
@@ -180,7 +180,7 @@ export const ItemList:ItemListInterface[] = [
     {
       imgpng: imagepng19 as string,
       img: image19 as string,
-      details: '.גריפ למחסנית של רובה משפר אחיזה ונוח מאוד ',
+      details: 'גריפ למחסנית של רובה משפר אחיזה ונוח מאוד .',
       name: 'גריפ למחסנית',
       price: '₪29'
   }
