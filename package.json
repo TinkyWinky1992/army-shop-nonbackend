@@ -1,0 +1,47 @@
+{
+  "name": "shop-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "TinkyWinky1992.github.io",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "deploy":"npm run build && netlify deploy --prod"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@react-spring/parallax": "^9.7.3",
+    "@reduxjs/toolkit": "^2.2.6",
+    "@tabler/icons-react": "^3.9.0",
+    "axios": "^1.7.2",
+    "debounce": "^2.1.0",
+    "js-cookie": "^3.0.5",
+    "lodash.debounce": "^4.0.8",
+    "react": "^18.3.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
+    "react-responsive": "^10.0.0",
+    "react-router-dom": "^6.24.1"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/lodash": "^4.17.6",
+    "@types/react": "^18.3.3",
+    "@types/react-anchor-link-smooth-scroll": "^1.0.5",
+    "@types/react-dom": "^18.3.0",
+    "@types/redux": "^3.6.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "sass": "^1.77.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  }
+}
