@@ -29,9 +29,9 @@ export const ImageGallery: React.FC = () => {
            scrollbarWidth: "none"
           }} variant="woven"  cols={3} gap={20}>
         {ItemList.map((image: ItemListInterface) => (
-          <ButtonResponsive variant="contained" sx={{ backgroundColor: 'rgba(0, 0, 0, 0.7)', padding: { xs: 0, sm: 1 }, margin: 2 }} onClick={() => onClick(image)}>
-            <ImageListItem key={image.name} sx={{ width: "150px", height: "150px" }}>
-              <ImgResponsive  sx={{marginTop: {xs:5, sm:0}}}src={image.img} alt={image.name} loading="lazy" 
+          <ButtonResponsive variant="contained" sx={{ width:{xs:200, sm:300}, height:{xs:200, sm: 300},backgroundColor: 'rgba(0, 0, 0, 0.7)', padding: { xs: 0, sm: 1 }, margin: 2 }} onClick={() => onClick(image)}>
+            <ImageListItem key={image.name} sx={{ width: {xs:300, sm:300}, height: {xs:300, sm: 300} }}>
+              <ImgResponsive  sx={{marginTop: {xs:10, sm:5}}}src={image.img} alt={image.name} loading="lazy" 
                 style={{
                   maxWidth: "50%",
                   maxHeight: "50%",
@@ -40,12 +40,12 @@ export const ImageGallery: React.FC = () => {
               />
               <ImageListItemBar
                 title={
-                  <Typography sx={{fontSize:{xs:7, sm:20}} }noWrap variant="body2" color="inherit">
+                  <Typography sx={{fontSize:{xs:15, sm:20}} }noWrap variant="body2" color="inherit">
                     {image.name}
                   </Typography>
                 }
                 subtitle={
-                  <Typography sx={{fontSize:{xs:10, sm:20}}} noWrap variant="body2" color="inherit">
+                  <Typography sx={{fontSize:{xs:15, sm:20}}} noWrap variant="body2" color="inherit">
                     {image.price}
                   </Typography>
                 }
