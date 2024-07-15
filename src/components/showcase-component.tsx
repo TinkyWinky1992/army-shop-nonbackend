@@ -78,6 +78,7 @@ export const ShowCase: React.FunctionComponent = () => {
             width: { xl: "25%", md: "40%", xs: "100%", sm: "100%" },
             height: { xl: "40%", md: "30%", xs: "20%", sm: "20%" },
             ml: { xl: 20, md: 20, xs: 0, sm: 0 },
+            marginTop: {xs:"-300px", md:"-100px"}
           }}
         >
           <Grow
@@ -92,6 +93,7 @@ export const ShowCase: React.FunctionComponent = () => {
               fontSize: { xs: "20px", sm: "50px" },
               ml: 5,
               mr: 5,
+              
             }}
             >
               {ItemList[currentIndex].name}

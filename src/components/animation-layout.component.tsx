@@ -2,7 +2,7 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { BackGround, SecondBackGround } from "../assets";
-import { GridLayout } from '../theme';
+import { GridLayout, StyledGrid } from '../theme';
 import { ImageGallery } from "./gallery-component";
 import { ShowCase } from "./showcase-component";
 import { Grid, Typography } from '@mui/material';
@@ -57,20 +57,10 @@ export const AnimationLayout: React.FC = () => {
                                 filter: "blur(5px)",
                                 opacity: 0.8,
                             }} />
-                            <Grid item  style={{
-                                
-                                position: 'absolute',
-                                width: '100%',
-                                height: '100%',
-                                zIndex: 1,
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                flexDirection: 'column',
-                            }}>
+                            <StyledGrid item  >
                                 <Typography sx={{color:"white", fontFamily:"hebrewFont", fontSize:{xs:"20px", sm:"50px"}}} >גלרייה</Typography>
                                 <ImageGallery />
-                            </Grid>
+                            </StyledGrid>
                         </ParallaxLayer>
                     </Parallax>
                 

@@ -1,3 +1,4 @@
+/*
 import axios from "axios";
 import { ItemInterface } from "./server-utils";
 
@@ -12,4 +13,4 @@ export const getItem = async (): Promise<ItemInterface[]> => {
       return []; // return an empty array instead of null
     }
   };
-
+*/

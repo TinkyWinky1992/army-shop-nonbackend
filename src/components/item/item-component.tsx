@@ -54,7 +54,7 @@ export const ItemShowCase: React.FC = () => {
             
             <Grid item sx={{ border: 1, borderRadius: 4}}>
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <Typography variant="h4" sx={{ ml:20 , color:"black"}}>
+                    <Typography variant="h4" sx={{ ml:{xs:1,sm:1} , color:"black", fontSize:{xl:"40px", md:"30px", xs:"15px"}}}>
                     {state.image.price}
                     </Typography>
                     <Box sx={{
@@ -62,7 +62,7 @@ export const ItemShowCase: React.FC = () => {
                     justifyContent: "center",
                     alignItems: "center",
                     gap: 2,
-                    mt: 2,
+                    mt: 1,
                     }}>
 
                     <Button variant="contained" onClick={handleOpenModel} sx={{ marginBlockEnd: 5, backgroundColor: "#dc3545", color: "white", fontFamily: "hebrewFont" }}>
@@ -74,7 +74,7 @@ export const ItemShowCase: React.FC = () => {
             </Grid>
 
         </Box>
-        <AlertModal ref={alertRef} />
+        <AlertModal  ref={alertRef} />
       </GridLayout>
       
     );

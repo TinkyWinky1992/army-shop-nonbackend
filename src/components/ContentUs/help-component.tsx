@@ -57,8 +57,9 @@ export const Contnant: React.FC = () => {
                       fontSize: { xs: "20px", sm: "50px" },
                       ml: 5,
                       mr: 5,
+                      direction:"rtl"
                     }}>
-                      :ליצירת קשר
+                      ליצירת קשר:
                     </Typography>
                 </Grow>
                     

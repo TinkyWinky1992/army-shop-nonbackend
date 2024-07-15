@@ -40,7 +40,7 @@ export const ImageGallery: React.FC = () => {
               />
               <ImageListItemBar
                 title={
-                  <Typography sx={{fontSize:{xs:10, sm:20}} }noWrap variant="body2" color="inherit">
+                  <Typography sx={{fontSize:{xs:7, sm:20}} }noWrap variant="body2" color="inherit">
                     {image.name}
                   </Typography>
                 }

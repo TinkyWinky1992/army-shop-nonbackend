@@ -8,7 +8,7 @@ import Drawer from '@mui/material/Drawer';
 import { NavBar } from "./navigationbar-component";
 import { NavigationCart } from "./navigationcart-component";
 import { logoImg } from "../assets";
-import { TabStyle, LogoImg, IconMenuStyle, Title, Search } from "../theme";
+import { TabStyle, LogoImg, IconMenuStyle, Title, Search} from "../theme";
 import { ItemList , ItemListInterface} from "../assets";
 
 
@@ -49,7 +49,7 @@ export const MainAppBar: React.FunctionComponent = () => {
     }
     
     return (
-        <AppBar position="static" >
+        <AppBar position="static" sx={ {backgroundColor: 'rgba(25, 118, 210, 0.7)' }}>
             <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <IconButton sx={{ position: "absolute", left: 30, display: { xs: "flex", md: "none" } }} edge="start" color="inherit" aria-label="menu" onClick={toggleDrawerMenu(true)}>
                     <IconMenuStyle />
@@ -74,27 +74,27 @@ export const MainAppBar: React.FunctionComponent = () => {
                     <Search>
                         <Autocomplete
                             options={labeltest}
-                            sx={{ width: {xs:"150px", sm:"300px"}, 
-                                '& .MuiAutocomplete-input':{
-                                    height: {xs:"0.4rem", sm:"1rem"}
-
-                                } 
+                            sx={{
+                                width: { xs: 150, sm: 200, md: 300, lg: 400, xl: 500 },
+                                '& .MuiAutocomplete-input': {
+                                    height: { xs: '0.5rem', sm: '1rem' },
+                                    
+                                },
+                                direction: 'rtl',
                             }}
-                            getOptionLabel={(option) =>
-                                option.label
-                              }
-                              //@ts-ignore
-                              onChange={(event, value) => {
-                                if(value)
-                                    onClickToItem(value.obj);
-                              }}
+                            getOptionLabel={(option) => option.label}
+                            //@ts-ignore
+                            onChange={(event, value) => {
+                                if (value) onClickToItem(value.obj);
+                            }}
                             renderInput={(params: any) => (
                                 <TextField
-                                    {...params}
-                                    label="חפש מוצר"
-                                    InputLabelProps={{ sx: { color: 'white', fontFamily: 'hebrewFont', fontSize:{xs:"10px", sm:"15px"} } }}
-                                    inputProps={{ ...params.inputProps, style: { color: 'white', fontFamily: 'Arial' } }}
-                                    
+                                {...params}
+                                label="חפש מוצר"
+                                variant="filled"
+                                InputLabelProps={{
+                                    sx: { color: 'white', fontFamily: 'hebrewFont', fontSize: { xs: 10, sm: 15, md: 15, lg: 15, xl: 15 } },
+                                }}
                                 />
                             )}
                         />
@@ -113,7 +113,7 @@ export const MainAppBar: React.FunctionComponent = () => {
                 </Box>
                 <Box sx={{ position: "absolute", right: 0, marginRight: 1, display: "flex", alignItems: "center" }}>
                     <IconButton onClick={handelLogoClick}>
-                        <Title>ARMOURY TECH</Title>
+                        <Title sx={{marginRight: 0.5}}>ARMOURY TECH</Title>
                         <LogoImg src={logoImg} />
                     </IconButton>
                 </Box>

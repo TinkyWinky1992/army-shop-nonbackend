@@ -5,8 +5,32 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Typography from '@mui/material/Typography';
 import { styled,alpha  } from '@mui/material/styles';
-import { Button, Grid } from "@mui/material";
+import { Button, Grid, AppBar} from "@mui/material";
 
+export const StyledGrid = styled(Grid)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 600px) { /* adjust the breakpoint value as needed */
+    top: 60%;
+  }
+`;
+
+export const appbarStyle = styled(AppBar)(({ theme }) => ({
+    backgroundColor: 'rgba(25, 118, 210, 0.7)',
+    [theme.breakpoints.down('sm')]: {
+        padding: '0.5rem',
+        fontSize: '1rem',
+    }
+
+}));
 
 export const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -91,7 +115,7 @@ export const Title = styled(Typography)(({ theme }) => ({
     alignSelf: "center",
     color: "white",
     [theme.breakpoints.down('sm')]: {
-        fontSize: '0.7rem',
+        fontSize: '0.6rem',
     },
     [theme.breakpoints.up('md')]: {
         fontSize: '1.25rem',
