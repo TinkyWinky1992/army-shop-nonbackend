@@ -5,11 +5,11 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import { Tabs, IconButton, TextField, Autocomplete } from "@mui/material";
 import Drawer from '@mui/material/Drawer';
-import { NavBar } from "./navigationbar-component";
-import { NavigationCart } from "./navigationcart-component";
-import { logoImg } from "../assets";
-import { TabStyle, LogoImg, IconMenuStyle, Title, Search} from "../theme";
-import { ItemList , ItemListInterface} from "../assets";
+import { NavBar } from "../Navigation/navigationbar-component";
+import { NavigationCart } from "../Navigation";
+import { logoImg } from "../../assets";
+import { TabStyle, LogoImg, IconMenuStyle, Title, Search} from "../../theme";
+import { ItemList , ItemListInterface} from "../../assets";
 
 
 

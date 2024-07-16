@@ -5,7 +5,7 @@ import { Box, Typography, Button, Grid } from '@mui/material';
 
 import "../../fonts/font.css";
 import { itembg } from '../../assets';
-import { AlertModal } from '../Alert';
+import { AlertModal } from '../Alerts/Alert';
 
 export const ItemShowCase: React.FC = () => {
     const { state } = useLocation();

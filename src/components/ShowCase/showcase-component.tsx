@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { Grid, IconButton, Box, Typography } from "@mui/material";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import { GridLayout } from "../theme";
+import { GridLayout } from "../../theme";
 import Grow from '@mui/material/Grow';
-import { ItemList } from "../assets";
+import { ItemList } from "../../assets";
 export const ShowCase: React.FunctionComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);

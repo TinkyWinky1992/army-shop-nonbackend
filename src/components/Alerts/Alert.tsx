@@ -1,6 +1,6 @@
 import { Typography, Modal, Box } from "@mui/material";
 import React, { useImperativeHandle, forwardRef } from "react";
-import '../fonts/font.css'
+import '../../fonts/font.css'
 
 //@ts-ignore
 export const AlertModal = forwardRef((props, ref) => {

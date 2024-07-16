@@ -1,13 +1,13 @@
 
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { BackGround, SecondBackGround } from "../assets";
-import { GridLayout, StyledGrid } from '../theme';
-import { ImageGallery } from "./gallery-component";
-import { ShowCase } from "./showcase-component";
+import { BackGround, SecondBackGround } from "../../assets";
+import { GridLayout, StyledGrid } from '../../theme';
+import { ImageGallery } from "../Gallery/gallery-component";
+import { ShowCase } from '../ShowCase';
 import { Grid, Typography } from '@mui/material';
 
-import '../fonts/font.css';
+import '../../fonts/font.css';
 export const AnimationLayout: React.FC = () => {
 
 

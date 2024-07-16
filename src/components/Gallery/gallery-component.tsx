@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { ButtonResponsive } from '../theme';
-import { GridLayout, ImgResponsive } from '../theme';
+import { ButtonResponsive } from '../../theme';
+import { GridLayout, ImgResponsive } from '../../theme';
 import { Typography } from '@mui/material';
-import { ItemList , ItemListInterface} from "../assets";
+import { ItemList , ItemListInterface} from "../../assets";
 
 export const ImageGallery: React.FC = () => {
   const navigate = useNavigate();
@@ -29,9 +29,9 @@ export const ImageGallery: React.FC = () => {
            scrollbarWidth: "none"
           }} variant="woven"  cols={3} gap={20}>
         {ItemList.map((image: ItemListInterface) => (
-          <ButtonResponsive variant="contained" sx={{ width:{xs:200, sm:300}, height:{xs:200, sm: 300},backgroundColor: 'rgba(0, 0, 0, 0.7)', padding: { xs: 0, sm: 1 }, margin: 2 }} onClick={() => onClick(image)}>
-            <ImageListItem key={image.name} sx={{ width: {xs:300, sm:300}, height: {xs:300, sm: 300} }}>
-              <ImgResponsive  sx={{marginTop: {xs:10, sm:5}}}src={image.img} alt={image.name} loading="lazy" 
+          <ButtonResponsive variant="contained" sx={{ width:{xs:180, sm:200}, height:{xs:180, sm: 200},backgroundColor: 'rgba(0, 0, 0, 0.7)', padding: { xs: 0, sm: 1 }, margin: 2 }} onClick={() => onClick(image)}>
+            <ImageListItem key={image.name} sx={{ width: {xs:250, sm: 250}, height: {xs:250, sm: 250} }}>
+              <ImgResponsive  sx={{marginTop: {xs:7, sm:5}}}src={image.img} alt={image.name} loading="lazy" 
                 style={{
                   maxWidth: "50%",
                   maxHeight: "50%",
@@ -40,7 +40,7 @@ export const ImageGallery: React.FC = () => {
               />
               <ImageListItemBar
                 title={
-                  <Typography sx={{fontSize:{xs:15, sm:20}} }noWrap variant="body2" color="inherit">
+                  <Typography sx={{fontSize:{xs:12, sm:20}} }noWrap variant="body2" color="inherit">
                     {image.name}
                   </Typography>
                 }

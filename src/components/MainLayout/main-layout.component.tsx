@@ -1,4 +1,4 @@
-import { AnimationLayout } from "./animation-layout.component";
+import { AnimationLayout } from "../AnimationLayout";
 
 export const MainLayout: React.FC = () => {
   return (

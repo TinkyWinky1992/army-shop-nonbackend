@@ -5,9 +5,9 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import { Avatar, Grid } from '@mui/material';
-import "../fonts/font.css" 
+import "../../fonts/font.css" 
 import { useSelector } from 'react-redux';
-import { selectCartItems } from "./Cart";
+import { selectCartItems } from "../Cart";
 
 
 export const NavigationCart: React.FC = () => {

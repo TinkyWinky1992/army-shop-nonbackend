@@ -13,7 +13,7 @@ import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import "../fonts/font.css" 
+import "../../fonts/font.css" 
 
 const drawerItems = [
     { text: 'חנות', icon: <ShoppingCartIcon /> },
